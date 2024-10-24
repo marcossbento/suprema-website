@@ -1,0 +1,132 @@
+$primary-strong-blue: #182d70;
+$primary-stronger-blue: #0d2268;
+$secondary-mid-blue: #355fa7;
+$secondary-light-blue: #4989cd;
+$green: #5ab24c;
+$white: #ffffff;
+$black: #191919;
+$border-color: #e0e0e0;
+
+::ng-deep p-menubar {
+    background-color: white;
+    justify-content: space-between;
+    display: flex;
+    font-weight: 500;
+
+    img {
+        height: 60px;
+    }
+
+    .p-component {
+        justify-content: space-between;
+        border-radius: 0px 0px 100px 100px;
+        padding: 12px 64px;
+        width: 100%;
+        height: 107px;
+    }
+
+    .p-menuitem-content {
+        color: $secondary-light-blue;
+        margin: 0 24px;
+        border-radius: 30px;
+
+        &:hover {
+            color: $primary-strong-blue;
+        }
+    }
+
+    .p-submenu-list {
+        padding: 0;
+
+        .p-menuitem-content {
+            margin: 0;
+            border-radius: 0;
+            width: 100%;
+
+            a {
+                border-radius: 0;
+            }
+        }
+    }
+
+    .p-element {
+        border-radius: 30px;
+    }
+
+    .p-menubar-end {
+        margin: 0;
+
+        .p-button {
+            background-color: $primary-strong-blue;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: $green;
+            }
+
+            i {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .p-menuitem-link {
+        display: flex;
+        align-items: center;
+        padding: 0.75rem 1rem;
+        color: $primary-strong-blue;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+        font-weight: 500;
+
+
+
+        &:hover {
+            background-color: $primary-strong-blue;
+            color: white;
+        }
+
+        .pi {
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+        }
+
+        &.ml-auto {
+            margin-left: auto;
+        }
+    }
+
+    .border-1 {
+        border: 1px solid $border-color;
+    }
+
+    .surface-border {
+        border-color: $border-color;
+    }
+
+    .gap-2 {
+        gap: 0.5rem;
+    }
+
+    .text-xs {
+        font-size: 0.75rem;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    @media (max-width: 768px) {
+        .p-menuitem-link {
+            padding: 0.5rem;
+        }
+
+        img {
+            height: 30px;
+        }
+    }
+}
+
