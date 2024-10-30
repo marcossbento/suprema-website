@@ -1,0 +1,133 @@
+$primary-strong-blue: #182d70;
+$primary-stronger-blue: #04113d;
+$secondary-mid-blue: #355fa7;
+$secondary-light-blue: #4989cd;
+$green: #5ab24c;
+$white: #ffffff;
+$black: #191919;
+$border-color: #e0e0e0;
+
+.footer {
+    display: flex;
+    flex-direction: column;
+
+    //faixa branca footer
+    .top-footer-container {
+        background-color: #ffffff;
+        border: 1px solid $border-color;
+        display: flex;
+        padding: 8px 10%;
+        align-items: center;
+
+        .top-footer-item {
+            display: flex;
+            width: 25%;
+            justify-content: center;
+
+            a {
+                display: flex;
+                width: fit-content;
+                text-decoration: none;
+
+                img {
+                    display: flex;
+                    align-items: center;
+                    width: 100px;
+                }
+
+                i {
+                    width: 100%;
+                    color: $primary-strong-blue;
+                    font-size: 2.2rem;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: $primary-stronger-blue;
+                        transform: translateY(-2px);
+                    }
+                }
+            }
+        }
+    }
+
+    //faixa azul footer
+    .bottom-footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+        background-color: $primary-strong-blue;
+        color: $white;
+        padding: 20px 10%;
+
+        .bottom-footer-item {
+            padding: 8px;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            a {
+                width: 40%;
+
+                img {
+                    width: 100%;
+                }
+
+            }
+
+            i {
+                color: $green;
+                font-size: 2.2rem;
+            }
+
+            p {
+                font-weight: 500;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                text-align: center;
+
+                li {
+                    margin: 12px 0;
+
+                    a {
+                        color: $white;
+                        text-decoration: none;
+                        font-size: 1rem;
+                        transition: .3s;
+
+                        &:hover {
+                            color: $green;
+                        }
+                    }
+                }
+            }
+
+            #localizacao {
+                color: $white;
+                text-decoration: none;
+                margin-bottom: 16px;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $green;
+                }
+            }
+        }
+
+        img {
+            width: 80px;
+        }
+    }
+
+    .copyright {
+        color: $white;
+        background-color: $primary-strong-blue;
+        text-align: center;
+        margin: 0;
+    }
+}

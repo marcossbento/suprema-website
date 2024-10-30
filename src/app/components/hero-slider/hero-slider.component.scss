@@ -1,0 +1,96 @@
+$primary-strong-blue: #182d70;
+$secondary-mid-blue: #355fa7;
+$secondary-light-blue: #4989cd;
+$green: #5ab24c;
+$white: #ffffff;
+$black: #191919;
+$border-color: #e0e0e0;
+
+::ng-deep p-carousel {
+
+    .p-carousel-item-active {
+        .hero-slide-content {
+            h2 {
+                animation: fadeInUp 1s ease-in-out;
+            }
+
+            p {
+                animation: fadeInDown 1s ease-in-out;
+            }
+        }
+    }
+
+    .hero-slide {
+        position: relative;
+        width: 100%;
+        height: 85vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .hero-slide-content {
+            width: 100%;
+            padding: 0 5%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+
+            h2 {
+                font-size: 4.2rem;
+                margin: 0;
+            }
+
+            img {
+                width: 200px;
+            }
+
+            p {
+                font-size: 1.25rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-slide {
+                .hero-slide-content {
+                    h2 {
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+    }
+    .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+        background-color: $primary-strong-blue;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

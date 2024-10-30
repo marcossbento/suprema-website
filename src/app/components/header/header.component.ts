@@ -1,10 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenubarModule } from 'primeng/menubar';
-import { BadgeModule } from 'primeng/badge';
-import { AvatarModule } from 'primeng/avatar';
-import { RippleModule } from 'primeng/ripple';
-import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
@@ -13,10 +9,6 @@ import { ButtonModule } from 'primeng/button';
   imports: [
     CommonModule,
     MenubarModule,
-    BadgeModule,
-    AvatarModule,
-    RippleModule,
-    InputTextModule,
     ButtonModule
   ],
   templateUrl: './header.component.html',
@@ -24,30 +16,54 @@ import { ButtonModule } from 'primeng/button';
 })
 export class HeaderComponent {
   items = [
-    { label: 'Quem Somos',
+    { 
+      label: 'Quem Somos',
       icon: 'pi pi-fw pi-building' 
     },
-    { label: 'Serviços',
+    { 
+      label: 'Serviços',
       icon: 'pi pi-fw pi-briefcase',
       items: [ // Subitens para o dropdown
         {
           label: 'Análise de Água',
-          routerLink: '/analiseDeAgua'
+          routerLink: '/analise-de-agua'
         },
         {
           label: 'Análise de Alimentos',
-          routerLink: '/analiseDeAlimentos'
+          routerLink: '/analise-de-alimentos'
         },
         {
           label: 'Análise de Solo',
-          routerLink: '/analiseDeSolo'
+          routerLink: '/analise-de-solo'
+        },
+        {
+          label: 'Efluentes',
+          routerLink: '/efluentes'
+        },
+        {
+          label: 'Cosméticos',
+          routerLink: '/cosmeticos'
+        },
+        {
+          label: 'Amostragem',
+          routerLink: '/amostragem'
+        },
+        {
+          label: 'Limpeza e Higienização de Reservatórios e Caminhoes',
+          routerLink: '/limpeza'
+        },
+        {
+          label: 'Outros Serviços',
+          routerLink: '/outros-servicos'
         }
       ] 
     },
-    { label: 'Contato',
+    { 
+      label: 'Contato',
       icon: 'pi pi-fw pi-phone' 
     },
-    { label: 'Estrutura',
+    { 
+      label: 'Estrutura',
       icon: 'pi pi-fw pi-verified' 
     }
   ];

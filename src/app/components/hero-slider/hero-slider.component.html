@@ -1,0 +1,17 @@
+<p-carousel 
+    [value]="images" 
+    [numVisible]="1" 
+    [numScroll]="1" 
+    [circular]="true" 
+    [autoplayInterval]="4000"
+    [showNavigators]="false">
+    <ng-template let-image pTemplate="item">
+        <div class="hero-slide" [ngStyle]="{'background-image': 'url(' + image.src + ')'}">
+            <div class="hero-slide-content">
+                <h2>{{ image.title }}</h2>
+                <img *ngIf="image.showCreditacao" src="assets/images/creditacao.webp" alt="Certificado de Acreditação" class="creditacao-img">
+                <p>{{ image.description }}</p>
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>
