@@ -53,7 +53,11 @@ $border-color: #e0e0e0;
             }
         }
 
-        @media (max-width: 768px) {
+        
+
+    }
+    
+    @media (max-width: 768px) {
             .hero-slide {
                 .hero-slide-content {
                     h2 {
@@ -66,8 +70,6 @@ $border-color: #e0e0e0;
                 }
             }
         }
-
-    }
     .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
         background-color: $primary-strong-blue;
     }
